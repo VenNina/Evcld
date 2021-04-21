@@ -1,0 +1,142 @@
+html {
+  box-sizing: border-box;
+  /* алгоритм расчета ширины и высоты */
+}
+
+/*
+* {
+  outline: 2px dotted hotpink
+} */
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --body-text: #333;
+  --back-text: #fff;
+  --peel: #ff9900;
+  --black-haze: #cacaca;
+  --hurricane: #00000080;
+  --active: #e1670e;
+  --orange-peel: #ff9900a3;
+}
+
+body {
+  /* min-width: 1800px; */
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--body-text);
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.about__container, .work__container {
+  padding-top: 107px;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 71px;
+  line-height: 86px;
+  color: var(--back-text);
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1;
+}
+
+.subhead {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--body-text);
+}
+
+.link-btn_view-bnt {
+  display: inline-block;
+  padding: 27px 37px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--back-text);
+}
+
+.link-btn_size-s {
+  padding: 19px 39px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.link-btn_size-m {
+  padding: 20px 54px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.link-btn_theme-peel {
+  background-color: var(--peel);
+}
+
+.link-btn_theme-island {
+  padding-top: 17px;
+  padding-bottom: 19px;
+  border: 3px solid var(--peel);
+}
+
+.link-btn_theme-town {
+  padding-top: 17px;
+  padding-bottom: 19px;
+  border: 1px solid var(--body-text);
+  color: var(--body-text);
+  background-color: white;
+}
+
+.link-btn_state-active:hover {
+  background-color: var(--orange-peel);
+}
+
+.link-btn_state-active:active {
+  background-color: var(--active)
+}
+
+.btn-step_state-active:hover {
+  color: var(--peel);
+}
+
+.btn-step_state-active:active {
+  color: var(--active);
+}
